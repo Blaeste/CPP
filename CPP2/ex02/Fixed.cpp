@@ -6,7 +6,7 @@
 /*   By: eschwart <eschwart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 09:45:16 by eschwart          #+#    #+#             */
-/*   Updated: 2025/10/15 12:27:08 by eschwart         ###   ########.fr       */
+/*   Updated: 2025/10/23 09:21:52 by eschwart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,27 +138,27 @@ Fixed	Fixed::operator/(const Fixed &rhs) const {
 // In/Decrement Op
 Fixed	&Fixed::operator++() {
 
-	this->_rawBits += (1 << this->_fractBits); // + 256
+	this->_rawBits += 1 ; // inc raw bit pas nb original (1 << this->_fractBits); // + 256
 	return *this;
 }
 
 Fixed	Fixed::operator++(int) {
 
 	Fixed	old_val = *this;
-	this->_rawBits += (1 << this->_fractBits); // + 256
+	this->_rawBits += 1; // inc raw bit pas nb original (1 << this->_fractBits); // + 256
 	return old_val;
 }
 
 Fixed	&Fixed::operator--() {
 
-	this->_rawBits -= (1 << this->_fractBits); // - 256
+	this->_rawBits -= 1; // decr raw bit pas nb original(1 << this->_fractBits); // - 256
 	return *this;
 }
 
 Fixed	Fixed::operator--(int) {
 
 	Fixed	old_val =  *this;
-	this->_rawBits -= ( 1 << this->_fractBits);  // - 256;
+	this->_rawBits -= 1; // derc raw bit pas nb original( 1 << this->_fractBits);  // - 256;
 	return old_val;
 }
 
