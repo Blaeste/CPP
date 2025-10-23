@@ -6,13 +6,15 @@
 /*   By: eschwart <eschwart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 09:45:08 by eschwart          #+#    #+#             */
-/*   Updated: 2025/10/16 15:37:13 by eschwart         ###   ########.fr       */
+/*   Updated: 2025/10/23 09:43:15 by eschwart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 #include <iostream>
 
 int main(void) {
@@ -94,6 +96,23 @@ int main(void) {
 
 		delete animals[i];
 	}
+
+	std::cout << std::endl;
+
+		std::cout << std::endl;
+
+	// Test 4 : WrongAnimal
+	WrongAnimal	*wAnimal = new WrongAnimal();
+	WrongAnimal	*wCat = new WrongCat();
+
+	std::cout << wAnimal->getType() << std::endl;
+	std::cout << wCat->getType() << std::endl;
+
+	std::cout << std::endl;
+
+	wAnimal->makeSound();
+	wCat->makeSound();
+
 
 	std::cout << std::endl;
 }
