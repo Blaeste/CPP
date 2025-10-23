@@ -6,7 +6,7 @@
 /*   By: eschwart <eschwart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 14:05:14 by eschwart          #+#    #+#             */
-/*   Updated: 2025/10/16 14:16:09 by eschwart         ###   ########.fr       */
+/*   Updated: 2025/10/23 09:25:35 by eschwart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class DiamondTrap : public virtual ScavTrap, public virtual FragTrap {
 		// Assignation operator
 		DiamondTrap&operator=(const DiamondTrap &other);
 		// Destructor
-		virtual ~DiamondTrap();
+		~DiamondTrap();
 
 		// Functions
 		void	whoAmI();

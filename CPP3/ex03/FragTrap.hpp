@@ -6,7 +6,7 @@
 /*   By: eschwart <eschwart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 13:11:05 by eschwart          #+#    #+#             */
-/*   Updated: 2025/10/16 14:10:54 by eschwart         ###   ########.fr       */
+/*   Updated: 2025/10/23 09:26:13 by eschwart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class FragTrap : public virtual ClapTrap {
 		// Assignation operator
 		FragTrap&operator=(const FragTrap &other);
 		// Destructor
-		virtual ~FragTrap();
+		~FragTrap();
 
 		// Functions
 		void	highFivesGuys( void );

@@ -6,7 +6,7 @@
 /*   By: eschwart <eschwart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:40:02 by eschwart          #+#    #+#             */
-/*   Updated: 2025/10/16 14:10:59 by eschwart         ###   ########.fr       */
+/*   Updated: 2025/10/23 09:26:10 by eschwart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class ScavTrap : public virtual ClapTrap {
 		// Assignation operator
 		ScavTrap&operator=(const ScavTrap &other);
 		// Destructor
-		virtual ~ScavTrap();
+		~ScavTrap();
 
 		// Functions
 		void	guardGate( void );
